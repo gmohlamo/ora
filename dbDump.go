@@ -35,11 +35,11 @@ func main() {
 	db, err := sql.Open("godror", conn)
 	gracefulCrash(err, true)
 	defer db.Close()
-	//assume that it was opened correctly
-	/*userSysPrivsRows, err := db.Query("SELECT * FROM USER_SYS_PRIVS")
+
+	userSysPrivsRows, err := db.Query("SELECT * FROM USER_SYS_PRIVS")
 	gracefulCrash(err, true)
-	fmt.Fprintf(f, "%s", color.HiRedString("User system privileges:\n"))
-	fmt.Fprintf(f, "%s", color.GreenString("=====================================================>"))
+	color.HiRed("\nUser System Privs:\n")
+	color.Green("=====================================================>")
 	prettyPrintQuery(userSysPrivsRows)
 	//databases on database
 	//commented out for brevity, but could prove to provide valuable information

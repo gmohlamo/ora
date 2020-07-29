@@ -1,10 +1,9 @@
-Simple golang script to dump contents of an OracleDB instance.
-Accepts a single argument which should be your connection string.
-Will dump colour coded output to stdout and errors to stderr.
-Your terminal buffer might(will) not be enough for the contennts so I suggest
-redirecting output to a file.
+# OracleDump script
+Simple Golang script that can be easily compiled for any operating system
+The following article provides some information on cross compiling for
+Windows should the client be using windows --> https://github.com/golang/go/wiki/WindowsCrossCompiling
 
-TODO:
-1. Fix file stream issues for the file itself
-2. Find a neater and more presentable way to display contents
-3. Resolve current errors you might get in a smarter way.
+Instructions are simple. The script needs to be ran with with the connection string provided as an argument.
+Otherwise the script will attempt to connect to the database listener using the following credentials on the localhost
+username: SYS AS SYSDBA
+password: oracle
