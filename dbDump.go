@@ -30,7 +30,7 @@ func main() {
 	if len(os.Args) == 2 {
 		conn = os.Args[1]
 	} else {
-		conn = "sys/oracle@orclcdb AS SYSDBA"
+		conn = "sys/oracle@localhost AS SYSDBA"
 	}
 	db, err := sql.Open("godror", conn)
 	gracefulCrash(err, true)
@@ -116,7 +116,8 @@ func main() {
 	rows, err = db.Query("SELECT AUDIT_OPTION, SUCCESS, FAILURE FROM DBA_STMT_AUDIT_OPTS WHERE AUDIT_OPTION='DROP USER' AND USER_NAME IS NULL AND PROXY_NAME IS NULL AND SUCCESS = 'BY ACCESS' AND FAILURE = 'BY ACCESS'")
 	gracefulCrash(err, true)
 	prettyPrintQuery(rows, f)
-	color.Red("Script Completed Execution\n")
+	str := color.RedString("Script Completed Execution\n")
+	fmt.Fprintf(f, str)
 }
 
 func prettyPrintQuery(rows *sql.Rows, f *os.File) {
