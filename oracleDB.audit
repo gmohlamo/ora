@@ -33,21 +33,21 @@ Ensure 'SEC_CASE_SENSITIVE_LOGON' Is Set to 'TRUE'
 }
 Ensure 'FAILED_LOGIN_ATTEMPTS' Is Less than or Equal to '5'
 [36m=====================================================>[0m[32mmap[string]interface {}[0m{
+  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
   [31m[1m"[0m[31mRESOURCE_NAME[0m[31m[1m"[0m: [31m[1m"[0m[31mFAILED_LOGIN_ATTEMPTS[0m[31m[1m"[0m,
   [31m[1m"[0m[31mLIMIT[0m[31m[1m"[0m:         [31m[1m"[0m[31m10[0m[31m[1m"[0m,
-  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
 }
 Ensure 'PASSWORD_LIFE_TIME' Is Less than or Equal to '90'
 [36m=====================================================>[0m[32mmap[string]interface {}[0m{
+  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
   [31m[1m"[0m[31mRESOURCE_NAME[0m[31m[1m"[0m: [31m[1m"[0m[31mPASSWORD_LIFE_TIME[0m[31m[1m"[0m,
   [31m[1m"[0m[31mLIMIT[0m[31m[1m"[0m:         [31m[1m"[0m[31mUNLIMITED[0m[31m[1m"[0m,
-  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
 }
 Ensure 'SESSIONS_PER_USER' Is Less than or Equal to '10'
 [36m=====================================================>[0m[32mmap[string]interface {}[0m{
-  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
   [31m[1m"[0m[31mRESOURCE_NAME[0m[31m[1m"[0m: [31m[1m"[0m[31mSESSIONS_PER_USER[0m[31m[1m"[0m,
   [31m[1m"[0m[31mLIMIT[0m[31m[1m"[0m:         [31m[1m"[0m[31mUNLIMITED[0m[31m[1m"[0m,
+  [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mDEFAULT[0m[31m[1m"[0m,
 }
 [36m=====================================================>[0m[32mmap[string]interface {}[0m{
   [31m[1m"[0m[31mPROFILE[0m[31m[1m"[0m:       [31m[1m"[0m[31mORA_STIG_PROFILE[0m[31m[1m"[0m,
